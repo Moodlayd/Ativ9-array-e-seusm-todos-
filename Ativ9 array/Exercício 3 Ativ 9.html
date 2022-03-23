@@ -23,27 +23,29 @@ Exiba o resultado final de cada um dos inventários utilizando "document.write"*
 
  var drofo =  ["anel invisibilidade", "botas magicas", "botas magicas", "pocao sono", "pocao inocencia", "pocao inocencia", ];
 
- var topper = ["capa invisibilidade", "pocao anti inteligencia", "pedra do despertar", "varinha das varinhas", "pocao da inocencia", "pocao da mentira", "pocao da mentira"];
+ var topper = ["capa invisibilidade", "pedra do despertar", "varinha das varinhas", "pocao da inocencia", "pocao da mentira", "pocao da mentira", "pocao anti inteligencia"];
+
+//coisas que o topper fez 
+ topper.slice(5,1); // Usou uma poção da mentira
+ topper.slice(1,1)// Perdeu a pedra
+ topper.push("Botas mágicas")//Ganhou do drofo
+ drofo.slice(1,1)// Sem uma bota
+ topper.push("Escudo mágico");// Achou um escudo mágico
+ topper.push("Espada mágica"); // Achou uma espada mágica
 
  //coisas que o drofo fez
  drofo.push("Bota mágica"); //Ganhou uma bota mágica
- drofo.splice(3,3); // Usou uma poção do sono
- drofo.splice(1,1); //Usou  uma poção inocência
+ drofo.slice(2,1); // Usou uma poção do sono
+ topper.splice(4,1); //Usou  uma poção anti inteligencia
  drofo.push("Ovo de dragão"); //Achou ovo de dragão
  drofo.push (" Coxinha"); // Achou uma coxinha
 
- //coisas que o topper fez 
- topper.pop(); // Usou uma poção da mentira
- topper.splice(2,2)// Perdeu a pedra
- topper.push("Botas mágicas")//Ganhou do drofo
- topper.splice(1,1)// Sem uma bota
- topper.push("Escudo mágico");// Achou um escudo mágico
- topper.push("Espada mágica"); // Achou uma espada mágica
+ 
+ 
 
  document.write("Inventário do Topper:" + topper + "<br>"); // Vai exibir o inventário do Topper
 
  document.write("Inventário do Drofo:" + drofo +"<br>"); // Vai exibir o inventário do drofo
-
 
 
 
